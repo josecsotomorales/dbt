@@ -1,0 +1,11 @@
+version: 2
+models:
+
+- name: dim_date
+  description: Table dim_date.
+  columns:
+    - name: date_key
+      description: Primary key
+      tests:
+        - not_null
+        - unique

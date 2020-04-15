@@ -42,3 +42,5 @@ seeds:
   schema: raw
 
 # Configuring snapshots
+snapshots:
+  schema: raw

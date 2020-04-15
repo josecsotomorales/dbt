@@ -29,8 +29,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
     my_dbt_project:
       raw:
-        transient: true
+        schema: raw
+        transient: false
       stg:
+        schema: stg
         materialized: view
       rpt:
         transient: false

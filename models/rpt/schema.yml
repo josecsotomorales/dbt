@@ -9,3 +9,5 @@ models:
       tests:
         - not_null
         - unique
+- name: dim_country
+  description: Table dim_country.

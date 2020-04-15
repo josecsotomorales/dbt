@@ -1,0 +1,26 @@
+version: 2
+models:
+
+- name: customers
+  description: Raw data customers.
+
+- name: lineitem
+  description: Raw data lineitem.
+
+- name: nation
+  description: Raw data nation.
+
+- name: orders
+  description: Raw data orders.
+
+- name: part
+  description: Raw data part.
+
+- name: partsupp
+  description: Raw data partsupp.
+
+- name: region
+  description: Raw data region.
+
+- name: supplier
+  description: Raw data supplier.

@@ -3,3 +3,27 @@ models:
 
 - name: stg_countries
   description: Stage object for countries.
+
+- name: stg_customers
+  description: Stage object for customers.
+
+- name: stg_lineitem
+  description: Stage object for lineitem.
+
+- name: stg_nation
+  description: Stage object for nation.
+
+- name: stg_orders
+  description: Stage object for orders.
+
+- name: stg_part
+  description: Stage object for part.
+
+- name: stg_partsupp
+  description: Stage object for partsupp.
+
+- name: stg_region
+  description: Stage object for region.
+
+- name: stg_supplier
+  description: Stage object for supplier.

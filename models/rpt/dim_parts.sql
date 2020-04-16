@@ -1,6 +1,7 @@
 {{ 
     config(
-        materialized='view'
+        materialized='incremental',
+        unique_key='p_partkey'
     ) 
 }}
 
@@ -14,4 +15,4 @@ select
   p_container,
   p_retailprice,
   p_comment
-from {{ ref('raw_part') }}
+from {{ ref('stg_part') }}

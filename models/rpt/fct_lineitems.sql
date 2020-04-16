@@ -1,11 +1,12 @@
 {{ 
     config(
-        materialized='view'
+        materialized='incremental',
+        unique_key='l_lineitemkey'
     ) 
 }}
 
 select
-  sha2(array_to_string(array_construct(l_orderkey, l_partkey, l_suppkey, l_shipdate, l_commitdate, l_receiptdate), '')) as l_lineitemkey,
+  l_lineitemkey,
   l_orderkey,
   l_partkey,
   l_suppkey,
@@ -22,4 +23,4 @@ select
   l_shipinstruct,
   l_shipmode,
   l_comment
-from {{ ref('raw_lineitem') }}
+from {{ ref('stg_lineitem') }}

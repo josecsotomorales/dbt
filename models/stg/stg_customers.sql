@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('customers') }}
+select * from {{ ref('raw_customers') }}

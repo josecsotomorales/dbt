@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('part') }}
+select * from {{ ref('raw_part') }}

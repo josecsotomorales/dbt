@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('lineitem') }}
+select * from {{ ref('raw_lineitem') }}

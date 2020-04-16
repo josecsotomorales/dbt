@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('orders') }}
+select * from {{ ref('raw_orders') }}

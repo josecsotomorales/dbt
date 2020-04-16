@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('supplier') }}
+select * from {{ ref('raw_supplier') }}

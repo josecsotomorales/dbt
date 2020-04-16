@@ -9,6 +9,15 @@ models:
       tests:
         - not_null
         - unique
+
+- name: fct_lineitems
+  description: Table fct_lineitems.
+  columns:
+    - name: l_lineitemkey
+      description: Primary key
+      tests:
+        - not_null
+        - unique
         
 - name: dim_country
   description: Table dim_country.

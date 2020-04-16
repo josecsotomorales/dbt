@@ -1,23 +1,51 @@
 version: 2
 models:
 
-- name: dim_date
-  description: Table dim_date.
+- name: dim_customers
   columns:
-    - name: date_key
-      description: Primary key
+    - name: c_custkey
+      tests:
+        - not_null
+        - unique
+
+- name: dim_nations
+  columns:
+    - name: n_nationkey
+      tests:
+        - not_null
+        - unique
+
+- name: dim_parts
+  columns:
+    - name: p_partkey
+      tests:
+        - not_null
+        - unique
+
+- name: dim_regions
+  columns:
+    - name: r_regionkey
+      tests:
+        - not_null
+        - unique
+
+- name: dim_suppliers
+  columns:
+    - name: s_suppkey
       tests:
         - not_null
         - unique
 
 - name: fct_lineitems
-  description: Table fct_lineitems.
   columns:
     - name: l_lineitemkey
-      description: Primary key
       tests:
         - not_null
         - unique
-        
-- name: dim_country
-  description: Table dim_country.
+
+- name: fct_orders
+  columns:
+    - name: o_orderkey
+      tests:
+        - not_null
+        - unique

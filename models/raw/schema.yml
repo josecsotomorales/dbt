@@ -1,26 +1,26 @@
 version: 2
 models:
 
-- name: customers
+- name: raw_customers
   description: Raw data customers.
 
-- name: lineitem
+- name: raw_lineitem
   description: Raw data lineitem.
 
-- name: nation
+- name: raw_nation
   description: Raw data nation.
 
-- name: orders
+- name: raw_orders
   description: Raw data orders.
 
-- name: part
+- name: raw_part
   description: Raw data part.
 
-- name: partsupp
+- name: raw_partsupp
   description: Raw data partsupp.
 
-- name: region
+- name: raw_region
   description: Raw data region.
 
-- name: supplier
+- name: raw_supplier
   description: Raw data supplier.

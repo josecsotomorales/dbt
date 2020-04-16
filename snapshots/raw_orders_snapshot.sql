@@ -1,7 +1,7 @@
-{% snapshot orders_snapshot %}
+{% snapshot raw_orders_snapshot %}
     {{
         config(
-          target_schema='raw',
+          target_schema='raw',  
           strategy='check',
           unique_key='o_orderkey',
           check_cols=['o_custkey',
@@ -15,6 +15,6 @@
         )
     }}
     
-    select * from {{ ref('orders') }}
+    select * from {{ ref('raw_orders') }}
     
 {% endsnapshot %}

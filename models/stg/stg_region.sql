@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from {{ ref('region') }}
+select * from {{ ref('raw_region') }}

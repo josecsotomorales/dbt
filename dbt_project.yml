@@ -43,4 +43,4 @@ seeds:
 
 # Configuring snapshots
 snapshots:
-  schema: raw
+  transient: false

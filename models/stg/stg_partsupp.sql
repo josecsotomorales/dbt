@@ -5,6 +5,7 @@
 }}
 
 select
+  sha2(array_to_string(array_construct(ps_partkey, ps_suppkey), '')) as ps_partsuppkey,
   ps_partkey,
   ps_suppkey,
   ps_availqty,

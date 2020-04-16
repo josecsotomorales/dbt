@@ -1,11 +1,11 @@
 {{ 
     config(
-        materialized='incremental',
-        unique_key='ps_partkey'
+        materialized='table'
     ) 
 }}
 
 select
+  ps_partsuppkey,
   ps_partkey,
   ps_suppkey,
   ps_availqty,

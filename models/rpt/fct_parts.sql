@@ -1,7 +1,7 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='p_partkey'
+        unique_key='ps_partkey'
     ) 
 }}
 

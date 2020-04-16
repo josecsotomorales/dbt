@@ -1,6 +1,7 @@
 {{ 
     config(
-        materialized='view'
+        materialized='incremental',
+        unique_key='p_partkey'
     ) 
 }}
 
@@ -10,4 +11,4 @@ select
   ps_availqty,
   ps_supplycost,
   ps_comment
-from {{ ref('raw_partsupp') }}
+from {{ ref('stg_partsupp') }}

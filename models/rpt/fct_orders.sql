@@ -1,6 +1,7 @@
 {{ 
     config(
-        materialized='view'
+        materialized='incremental',
+        unique_key='o_orderkey'
     ) 
 }}
 
@@ -14,4 +15,4 @@ select
   o_clerk,
   o_shippriority,
   o_comment 
-from {{ ref('raw_orders') }}
+from {{ ref('stg_orders') }}

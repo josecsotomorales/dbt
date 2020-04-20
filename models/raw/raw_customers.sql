@@ -4,4 +4,4 @@
     ) 
 }}
 
-select * from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."CUSTOMER"
+select * from {{ source('sf_sample_data', 'customer') }}

@@ -1,7 +1,8 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='o_orderkey'
+        unique_key='o_orderkey',
+        tags=['rpt', 'fct']
     ) 
 }}
 

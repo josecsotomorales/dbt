@@ -1,7 +1,8 @@
 {{ 
     config(
-        materialized='table'
+        materialized='table',
+        tags='raw'
     ) 
 }}
 
-select * from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."SUPPLIER"
+select * from {{ source('sf_sample_data', 'supplier') }}

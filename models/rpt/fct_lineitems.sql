@@ -1,7 +1,8 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='l_lineitemkey'
+        unique_key='l_lineitemkey',
+        tags=['rpt', 'fct']
     ) 
 }}
 

@@ -1,7 +1,8 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='n_nationkey'
+        unique_key='n_nationkey',
+        tags=['rpt', 'dim']
     ) 
 }}
 

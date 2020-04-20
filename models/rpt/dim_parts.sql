@@ -1,7 +1,8 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='p_partkey'
+        unique_key='p_partkey',
+        tags=['rpt', 'dim']
     ) 
 }}
 

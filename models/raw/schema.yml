@@ -1,6 +1,6 @@
 version: 2
 
-# Sources of raw data
+# Sources
 sources:
   - name: sf_sample_data
     database: snowflake_sample_data  

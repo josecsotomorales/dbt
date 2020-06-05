@@ -46,4 +46,13 @@ pipeline {
 
   } // End of stages
 
+  post {
+    success {
+      slackSend (color: 'good', message: "SUCCESSFUL: `${env.JOB_NAME}` #${env.BUILD_NUMBER}".replaceAll("%2F", "/"))
+    }
+    failure {
+      slackSend (color: 'danger', message: "FAILED: `${env.JOB_NAME}` #${env.BUILD_NUMBER}".replaceAll("%2F", "/"))
+    }
+  }
+
 } // End of pipeline
